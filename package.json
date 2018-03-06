@@ -1,0 +1,35 @@
+{
+  "name": "first-in",
+  "version": "1.0.0",
+  "description": "Residential and commercial tree service and storm damage company",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github.com/first-in.git"
+  },
+  "author": "brian@thewholepye.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/github.com/first-in/issues"
+  },
+  "homepage": "https://github.com/github.com/first-in#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.1.0",
+    "css-loader": "^0.28.10",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.1.1",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.2",
+    "webpack": "^4.1.0",
+    "webpack-cli": "^2.0.10"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}
