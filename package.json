@@ -11,12 +11,8 @@
     "type": "git",
     "url": "git+https://github.com/github.com/first-in.git"
   },
-  "author": "brian@thewholepye.com",
+  "author": "The Whole Pye Design Co",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/github.com/first-in/issues"
-  },
-  "homepage": "https://github.com/github.com/first-in#readme",
   "devDependencies": {
     "autoprefixer": "^8.1.0",
     "css-loader": "^0.28.10",
