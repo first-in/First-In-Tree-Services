@@ -1,6 +1,5 @@
 import 'bootstrap';
-import './scss/app.scss'
-import './scss/cover.scss'
+import './scss/app.scss';
 
 /*
 
