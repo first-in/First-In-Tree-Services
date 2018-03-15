@@ -10,6 +10,15 @@
 
   html { font-size: 1.4rem; }
 
+  .navbar { 
+    background-color: #fff;
+    box-shadow: 0px 2px 9px 1px rgba(56,68,68,0.2); 
+  }
+
+  .nav-link {
+    font-size: 0.75rem;
+  }
+
   .jumbotron-container { height: 60vh; }
 
   .jumbo-heading { 
@@ -40,6 +49,15 @@
     }
   }
 
+  .bg-img--trees { 
+    background-size: 75%; 
+  }
+
+  .bg-img--trees-lg { 
+    background-size: 90%; 
+  }
+
+
   .content-item {
  	  flex-flow: column-reverse;
     width: 50%;
@@ -49,11 +67,6 @@
       margin-top: 2rem;
       font-size: 0.7rem;
     }
-  }
-
-  .content-icon {
-    width: 4rem;
-    height: 4rem;
   }
 
   .contact-options-group {
@@ -66,31 +79,52 @@
     }
   }
 
+  .form-control { font-size: 0.75rem; }
+
   .twp-logo { max-width: 3rem; }
 
-  // .copyright-list { 
-  //   display: flex;
+  .copyright-list { font-size: 0.5rem; }
 
-  //   li { 
-  //     margin-right: 0.3rem;
+  footer ul { font-size: 0.75rem; }
 
-  //     &:last-of-type { margin-right: 0; }
-  //   }
-  // }
 }
 
 @include media-breakpoint-up(lg) {
-  // html { font-size: 1.6rem; }
 
-  // .jumbotron-container { max-width: ;}
+  section h2 { font-size: 2rem; }
 
   .jumbotron-container { 
     max-width: 43rem;
     margin: 0 auto;
-    height: 90vh; 
+    height: 80vh; 
   }
 
   .jumbo-heading h1 { font-size: 2.5rem; }
+
+  .bg-img--trees { 
+    background-size: 65%; 
+  }
+  .bg-img--trees-lg { 
+    background-size: 85%; 
+  }
   
+  .copyright-list { font-size: 0.75rem; }
 }
-@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xl) {
+
+  section h2 { font-size: 2.5rem; }
+
+  .bg-img--trees { 
+    background-size: 45%; 
+  }
+
+  .bg-img--trees-lg { 
+    background-size: 85%; 
+  }
+
+  .content-icon {
+    width: 10rem;
+    height: 10rem;
+  }
+}

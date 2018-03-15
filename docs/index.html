@@ -10,25 +10,25 @@
 
 </head>
 
-<body>
+<body data-spy="scroll">
 
 		<!-- navigation incl. mobile -->
 		<header class="container">
-			<nav class="navbar navbar-expand-md navbar-light">
+			<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
 			  <a class="font-brand--headings color-brand--dark d-flex align-items-center mb-0" href="www.firstintreeservices.com"><img src="img/fits-logo.svg" alt="company logo" ><span class="ml-2 h3 color-brand--primary mb-0">F.I.T.S.</span></a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
-			  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			  <div class="collapse navbar-collapse justify-content-end p-4 p-md-2" id="navbarNav">
 			    <ul class="navbar-nav flex-row justify-content-between">
 			      <li class="nav-item">
-			        <a class="nav-link" href="#Services">Services</a>
+			        <a class="nav-link" href="#Services">SERVICES</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="#About">About</a>
+			        <a class="nav-link" href="#About">ABOUT</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="#Contact"">Contact Us</a>
+			        <a class="nav-link" href="#Contact"">CONTACT US</a>
 			      </li>
 			    </ul>
 			  </div>
@@ -44,29 +44,27 @@
 				    	<img src="img/fits-badge.svg" alt="company badge and motto: integrity, commitment, excellence" >
 				    </div>
 
-				    <div class="jumbo-heading container">
+				    <div class="jumbo-heading">
 					  	<h1 class="text-light">FIRST IN TREE SERVICES</h1>
 					    <p class="lead text-light mb-0">Tree care professionals serving Greater Richmond and the surrounding areas</p>
 					  </div>
 					</div>
 
-				  <div class="w-100 text-center d-md-none">
+				  <div class="w-100 text-center">
 				  	<img src="img/trees-icon.svg" alt="tree icons">
 				  </div>
 			  </div>
 			</div>
 		</section>
 
-		<section>
-			<div class="bg-brand--dark border-brand--yellow p-4">
-				<div class="container">
-					<p class="color-brand--tan mb-0">Whether it’s storm damage or seasonal pruning, First In Tree Services has been committed to leaving customers satisfied since 2014.</p>
-				</div>
+		<section class="bg-brand--dark border-brand--yellow">
+			<div class="container py-4">
+				<p class="color-brand--tan mb-0">Whether it’s storm damage or seasonal pruning, First In Tree Services has been committed to leaving customers satisfied since 2014.</p>
 			</div>
 		</section>
 
 		<!-- services -->
-		<section id="Services">
+		<section id="Services" class="py-4">
 			<div class="container py-4">
 				<h2 class="text-center">SERVICES</h2>
 				<p class="d-md-none">Fully licensed and insured, we have you covered with all your residential or commercial needs for tree services</p>
@@ -77,22 +75,22 @@
 
 						<div class="content-item">
 							<h3>TREE REMOVAL</h3>
-							<span class="content-icon"></span>
+							<img class="content-icon" src="img/tree-1.svg" alt="Tree Removal">
 						</div>
 
 						<div class="content-item">
 							<h3>TRIM &amp; PRUNING</h3>
-							<span class="content-icon"></span>
+							<img class="content-icon" src="img/tree-2.svg" alt="Trim and Pruning">
 						</div>
 
 						<div class="content-item">
 							<h3>CANOPY RAISING</h3>
-							<span class="content-icon"></span>
+							<img class="content-icon" src="img/tree-3.svg" alt="Canopy Raising">
 						</div>
 
 						<div class="content-item">
 							<h3>STORM DAMAGE</h3>
-							<span class="content-icon"></span>
+							<img class="content-icon" src="img/tree-4.svg" alt="Storm Damage">
 						</div>
 					</div>
 				</div>
@@ -105,25 +103,24 @@
 		</section>
 
 		<!-- email sign up -->
-		<section>
-			<div class="bg-brand--dark p-4">
-				<div class="container">
-					<p class="color-brand--tan">Sign up for our email list and we’ll send you tips, tree care advice, and seasonal recommendations!</p>
-					<form class="d-flex">
-					  <div class="w-75">
-					    <label for="inputPassword2" class="sr-only">Email Address</label>
-					    <input type="email" class="form-control" id="emailSignUp" placeholder="Email Address">
-					  </div>
-					  <div class="w-25 ml-3">
-					  	<button type="submit" class="btn bg-brand--yellow w-100">Submit</button>
-					  </div>
-					</form>
-				</div>
+		<section class="bg-brand--dark">
+			<div class="container py-4 d-lg-flex align-items-center">
+				<p class="color-brand--tan w-100 pt-4 pt-lg-0 mb-lg-0">Sign up for our emails and we’ll send you tips, advice, and seasonal recommendations!</p>
+				<form class="d-flex w-100 ml-lg-4 mb-4 mb-lg-0">
+				  <div class="w-75">
+				    <label for="inputPassword2" class="sr-only">Email Address</label>
+				    <input type="email" class="form-control" id="emailSignUp" placeholder="Email Address">
+				  </div>
+				  <div class="w-25 ml-3">
+				  	<!-- <button type="submit" class="btn bg-brand--yellow w-100 p-1">Submit</button> -->
+				  	<button type="button" class="btn bg-brand--yellow w-100 p-1" data-toggle="modal" data-target="#contstructionModal">Send</button>
+				  </div>
+				</form>
 			</div>
 		</section>
 
 		<!-- about -->
-		<section id="About" class="bg-brand--primary">
+		<section id="About" class="bg-brand--primary bg-img--trees-lg py-4">
 			<div class="container py-4">
 				<h2 class="text-center text-light">HOW WE STARTED</h2>
 
@@ -149,12 +146,12 @@
 		</section>
 
 		<!-- contact form -->
-		<section id="Contact">
+		<section id="Contact" class="py-4">
 			<div class="container py-4">
 				<h2 class="text-center">CONTACT US</h2>
 				<p>All of our prices depend on your unique situation. Call, email, or fill out this form to schedule an appointment for an estimate.</p>
 
-				<div class="contact-options-group">
+				<div class="contact-options-group mt-4 pt-4">
 					<form class="contact-form">
 						<div class="form-group">
 					    <label for="name" class="sr-only">First and Last Name</label>
@@ -177,55 +174,58 @@
 						</div>
 
 						<div class="text-right">
-							<button type="submit" class="btn bg-brand--primary text-light">Submit</button>
+							<!-- <button type="submit" class="btn bg-brand--primary text-light">Submit</button> -->
+				  	<button type="button" class="btn bg-brand--yellow w-100 p-1" data-toggle="modal" data-target="#contstructionModal">Send</button>
 						</div>
 					</form>
 
-					<div class="content-list content-list__contact">
-							<div class="content-item">
-								<span class="content-icon"></span>
+					<div class="content-list content-list__contact my-4 py-4 p-md-0 m-md-0">
+							<div class="content-item mt-0">
+								<img src="img/email.svg" class="content-icon" >
 								<a href="mailto:nick@firstintreeservices.com">nick@firstintreeservices.com</a>
 							</div>
 
 							<div class="content-item">
-								<span class="content-icon"></span>
+								<img src="img/phone.svg" class="content-icon" >
 								<a href="tel:+18044671550">804-467-1550</a>
 							</div>
 
 							<div class="content-item">
-								<span class="content-icon"></span>
+								<img src="img/insta.svg" class="content-icon" >
 								<span>@firstintreeservices</span>
 							</div>
 
 							<div class="content-item">
-								<span class="content-icon"></span>
+								<img src="img/fb.svg" class="content-icon" >
 								<span>FirstInTreeServices</span>
 							</div>
 
 							<div class="content-item">
-								<span class="content-icon"></span>
+								<img src="img/youtube.svg" class="content-icon" >
 								<span>First In Tree Services LLC</span>
 							</div>
 					</div>
 				</div>
 
-			  <div class="w-100 text-center mt-4 pb-4">
+			  <div class="w-100 text-center mt-4">
 			  	<img src="img/trees-icon.svg" alt="tree icons">
 			  </div>
 
 			</div>
 		</section>
 
-		<footer class="bg-brand--dark">
-			<div class="container py-2">
+		<footer class="bg-img--trees">
+			<div class="container py-4">
 				<header>
-					<!-- <a class="navbar-brand" href="www.firstintreeservices.com"><img src="img/fits-logo.svg" alt="company logo" > F.I.T.S.</a> -->
-					<a class="font-brand--headings color-brand--tan d-flex align-items-center mb-0" href="www.firstintreeservices.com"><img src="img/fits-logo.svg" alt="company logo" ><span class="ml-2 h3 color-brand--tan mb-0">F.I.T.S.</span></a>
+					<a class="font-brand--headings color-brand--tan d-flex align-items-center mb-0" href="www.firstintreeservices.com">
+						<img src="img/fits-logo--yellow.svg" alt="company logo" >
+						<span class="ml-2 h3 color-brand--yellow mb-0">F.I.T.S.</span>
+					</a>
 				</header>
 			</div>
 			<nav class="border-brand--yellow">
 				<div class="container py-4">
-					<ul class="list-unstyled d-flex flex-row justify-content-between mb-0 text-light">
+					<ul class="list-unstyled d-flex flex-row justify-content-around mb-0 text-light">
 						<li><a class="font-brand--headings text-light" href="#Services">SERVICES</a></li>
 						<li><a class="font-brand--headings text-light" href="#About">ABOUT</a></li>
 						<li><a class="font-brand--headings text-light" href="#Contact">CONTACT</a></li>
@@ -233,86 +233,81 @@
 				</div>
 			</nav>
 
-				<section class="container pt-4">
-					<p class="color-brand--tan">Sign up for our email list and we’ll send you tips, tree care advice, and seasonal recommendations!</p>
-					<form class="d-flex">
+			<section class="container py-4">
+				<div class="container py-4 d-lg-flex align-items-center">
+					<p class="color-brand--tan w-100 pt-4 pt-lg-0 mb-lg-0">Sign up for our emails and we’ll send you tips, advice, and seasonal recommendations!</p>
+					<form class="d-flex w-100 ml-lg-4 mb-4 mb-lg-0">
 					  <div class="w-75">
 					    <label for="inputPassword2" class="sr-only">Email Address</label>
 					    <input type="email" class="form-control" id="emailSignUp" placeholder="Email Address">
 					  </div>
 					  <div class="w-25 ml-3">
-					  	<button type="submit" class="btn bg-brand--yellow w-100">Submit</button>
+					  	<!-- <button type="submit" class="btn bg-brand--yellow w-100 p-1">Submit</button> -->
+				  	<button type="button" class="btn bg-brand--yellow w-100 p-1" data-toggle="modal" data-target="#contstructionModal">Send</button>
 					  </div>
 					</form>
-				</section>
-
-				<div class="content-list content-list__contact d-none">
-					<div class="content-item">
-						<span class="content-icon"></span>
-						<a href="mailto:nick@firstintreeservices.com">nick@firstintreeservices.com</a>
-					</div>
-
-					<div class="content-item">
-						<span class="content-icon"></span>
-						<a href="tel:+18044671550">804-467-1550</a>
-					</div>
-
-					<div class="content-item">
-						<span class="content-icon"></span>
-						<span>@firstintreeservices</span>
-					</div>
-
-					<div class="content-item">
-						<span class="content-icon"></span>
-						<span>FirstInTreeServices</span>
-					</div>
-
-					<div class="content-item">
-						<span class="content-icon"></span>
-						<span>First In Tree Services LLC</span>
-					</div>
 				</div>
-				
-				<div class="d-flex flex-row justify-content-between p-4">
-						<div class="copyright-list list-unstyled mb-0 d-flex flex-column flex-md-row justify-content-end align-items-md-end">
-							<p class="mb-0 mr-md-3">FIRST IN TREE SERVICES LLC</p>
-							<p class="mb-0">COPYRIGHT 2018</p>
-						</div>
+			</section>
 
-					<div class="d-flex flex-row align-items-end">
-						<p class="twp-link d-none d-md-inline-block mr-4 mb-0"><a class="text-light font-brand--headings" href="www.thewholepye.com">The Whole Pye Design Co.</a></p>
-						<img class="twp-logo" src="img/twp-badge-logo.png" alt="The Whole Pye Design Co.">
-					</div>
+			<div class="content-list content-list__contact d-none">
+				<div class="content-item">
+					<span class="content-icon"></span>
+					<a href="mailto:nick@firstintreeservices.com">nick@firstintreeservices.com</a>
 				</div>
+
+				<div class="content-item">
+					<img class="content-icon"></span>
+					<a href="tel:+18044671550">804-467-1550</a>
+				</div>
+
+				<div class="content-item">
+					<span class="content-icon"></span>
+					<span>@firstintreeservices</span>
+				</div>
+
+				<div class="content-item">
+					<span class="content-icon"></span>
+					<span>FirstInTreeServices</span>
+				</div>
+
+				<div class="content-item">
+					<span class="content-icon"></span>
+					<span>First In Tree Services LLC</span>
+				</div>
+			</div>
+
+			<!-- Under Construction Modal -->
+			<div class="modal fade" id="contstructionModal" tabindex="-1" role="dialog" aria-labelledby="contstructionModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="contstructionModalLabel">We're Sorry</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <p>Our forms are not currently working but we are working. Please call or email us with any questions or estimate requests in the meantime.</p>
+			        <p>Thanks!</p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			
+			<div class="d-flex flex-row justify-content-between p-4">
+					<div class="copyright-list list-unstyled mb-0 d-flex flex-column flex-md-row justify-content-end align-items-md-end">
+						<p class="mb-0 mr-md-3">FIRST IN TREE SERVICES LLC</p>
+						<p class="mb-0">COPYRIGHT 2018</p>
+					</div>
+
+					<p class="d-flex flex-row align-items-end twp-link mb-0">
+						<a class="color-brand--yellow font-brand--headings d-none d-md-inline-block mr-md-2" href="www.thewholepye.com">The Whole Pye Design Co.</a>	
+						<img class="twp-logo" src="img/twp-badge-logo.svg" alt="The Whole Pye Design Co." >
+					</p>
 			</div>
 		</footer>
 
-		<div class="modal fade" id="underConstruction" tabindex="-1" role="dialog" aria-labelledby="underConstructionLabel" aria-hidden="true">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h5 class="modal-title" id="underConstructionLabel">Site Under Construction</h5>
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-		          <span aria-hidden="true">&times;</span>
-		        </button>
-		      </div>
-		      <div class="modal-body">
-		        Sorry for the mess - our website is still under construction! Please see the contact information to reach out. Thanks!
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-
-		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#underConstruction">
-  Launch demo modal
-</button>
-
   <script src="bundle.js"></script>
-  
-
 
 </body>
 </html>
