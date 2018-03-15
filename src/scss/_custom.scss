@@ -129,3 +129,26 @@ section {
 .twp-link {
 	font-size: 0.7rem;
 }
+
+// Bootstrap Overrides
+.jumbotron {
+	background-image: url(/docs/img/hero-bg.jpg);
+	background-size: cover;    
+	background-position: center center;
+	background-color: $brand-dark;
+	position: relative;
+	border-radius: 0;
+
+	.lead { font-size: 1rem; }
+}
+
+.navbar-light .navbar-toggler { 
+	border: 0;
+	outline: none; 
+}
+
+.nav-link {
+	font-size: 1rem;
+	@extend .font-brand--headings;
+}
+
