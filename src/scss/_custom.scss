@@ -1,0 +1,131 @@
+// Required Bootstrap
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// All custom styles partials
+@import "vars";
+@import "font";
+
+// Brand schemes
+.color-brand--tan { color: $brand-tan !important; }
+.color-brand--dark { color: $brand-dark !important; }
+.color-brand--yellow { color: $brand-yellow !important; }
+.color-brand--primary { color: $brand-primary !important; }
+
+.bg-brand--dark { background-color: $brand-dark !important; }
+.bg-brand--primary { background-color: $brand-primary !important; } 
+.bg-brand--yellow { background-color: $brand-yellow !important; }
+
+.bg-img--brand {
+	background-color: $brand-dark;
+  background-position: bottom right;
+	background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+	background-image: url('/docs/img/bg-trees.png');
+}
+.bg-img--trees { 
+  background-size: 85%;
+	@extend .bg-img--brand; 
+}
+.bg-img--trees-lg { 
+  background-size: 85%;
+	@extend .bg-img--brand; 
+}
+
+
+.border-brand--yellow { 
+	border-top: 5px solid $brand-yellow; 
+	border-bottom: 5px solid $brand-yellow; 
+}
+.font-brand--headings { font-family: $headings-font-family; }
+
+// General raw element styles
+body {
+	position: relative;
+	height: 100%;
+	overflow-y: scroll;
+	color: $brand-dark;
+}
+
+section {
+	h2 { 
+		font-size: 1.5rem;
+		margin-bottom: 2rem; 
+	}
+}
+
+.content-wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+// .gradient-overlay {
+// 	position: absolute;
+// 	top: 0;
+// 	bottom: 0;
+// 	left: 0;
+// 	right: 0;
+// 	background-color: #384444;
+// 	opacity: .75;
+// }
+
+.jumbotron-container { height: 40vh; }
+
+.jumbo-heading { 
+	margin: 0 auto;	
+
+	h1 { font-size: 1.7rem; }
+ }
+
+.content-list {
+
+	h3 { font-size: 1rem; }
+
+	// modifier class for contact info
+	&.content-list__contact {
+
+		.content-icon {
+	    height: 1.5rem;
+	    width: 1.5rem;
+	    margin: 1rem 1rem 0;
+		}
+
+		.content-item { 
+			justify-content: left;
+			margin: 1rem; 
+
+			a { color: $brand-dark; }
+		}
+	}
+}
+
+.content-item {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 2rem 0;
+
+	h3 { margin-right: 2rem; }
+}
+
+.content-icon {
+	width: 7rem;
+	height: 7rem;
+}
+
+.contact-form button { width: 50%; }
+
+.copyright-list {
+	color: #ccc;
+	font-size: 0.7rem;
+}
+
+.twp-logo {
+	width: 100%;
+	max-width: 5rem;
+}
+
+.twp-link {
+	font-size: 0.7rem;
+}

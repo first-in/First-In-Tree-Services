@@ -1,17 +1,27 @@
+@import "custom";
 @import "~bootstrap/scss/bootstrap";
 
+// Bootstrap Overrides
+.jumbotron {
+	background-image: url(/docs/img/hero-bg.jpg);
+	background-size: cover;    
+	background-position: center center;
+	background-color: $brand-dark;
+	position: relative;
+	border-radius: 0;
 
-/*
+	.lead { font-size: 1rem; }
+}
 
-  IMPORT SASS PARTIALS INDIVIDUALLY (Note that Bootstrap’s functions, variables and mixins are required):
+.navbar-light .navbar-toggler { 
+	border: 0;
+	outline: none; 
+}
 
-  // Required 
-  @import "~bootstrap/scss/functions";
-  @import "~bootstrap/scss/variables";
-  @import "~bootstrap/scss/mixins";
+.nav-link {
+	font-size: 1rem;
+	@extend .font-brand--headings;
+}
 
-  // Optional
-  @import "~bootstrap/scss/reboot";
-  @import "~bootstrap/scss/type";
-
-*/
+// Responsive Import
+@import "responsive";
