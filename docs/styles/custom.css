@@ -106,10 +106,11 @@ section h2 {
 .content-list.content-list__contact .content-icon {
   height: 1.5rem;
   width: 1.5rem;
-  margin: 1rem 1rem 0; }
+  margin: 0 1rem 0; }
 .content-list.content-list__contact .content-item {
   justify-content: left;
-  margin: 1rem; }
+  margin: 1rem;
+  align-items: center; }
   .content-list.content-list__contact .content-item a {
     color: #384444; }
 
