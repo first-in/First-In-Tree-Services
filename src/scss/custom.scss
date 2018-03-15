@@ -1,8 +1,3 @@
-// Required Bootstrap
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
-
 // All custom styles partials
 @import "vars";
 @import "font";
@@ -152,3 +147,4 @@ section {
 	@extend .font-brand--headings;
 }
 
+@import "responsive";

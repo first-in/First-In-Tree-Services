@@ -1,0 +1,266 @@
+@font-face {
+  font-family: 'montserratblack';
+  src: url("/fonts/montserrat-black-webfont.woff2") format("woff2"), url("/fonts/montserrat-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratbold';
+  src: url("/fonts/montserrat-bold-webfont.woff2") format("woff2"), url("/fonts/montserrat-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratextrabold';
+  src: url("/fonts/montserrat-extrabold-webfont.woff2") format("woff2"), url("/fonts/montserrat-extrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratextralight';
+  src: url("/fonts/montserrat-extralight-webfont.woff2") format("woff2"), url("/fonts/montserrat-extralight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratlight';
+  src: url("/fonts/montserrat-light-webfont.woff2") format("woff2"), url("/fonts/montserrat-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratmedium';
+  src: url("/fonts/montserrat-medium-webfont.woff2") format("woff2"), url("/fonts/montserrat-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratregular';
+  src: url("/fonts/montserrat-regular-webfont.woff2") format("woff2"), url("/fonts/montserrat-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserratsemibold';
+  src: url("/fonts/montserrat-semibold-webfont.woff2") format("woff2"), url("/fonts/montserrat-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+.color-brand--tan {
+  color: #ECC587 !important; }
+
+.color-brand--dark {
+  color: #384444 !important; }
+
+.color-brand--yellow {
+  color: #F5A623 !important; }
+
+.color-brand--primary {
+  color: #646B5B !important; }
+
+.bg-brand--dark {
+  background-color: #384444 !important; }
+
+.bg-brand--primary {
+  background-color: #646B5B !important; }
+
+.bg-brand--yellow {
+  background-color: #F5A623 !important; }
+
+.bg-img--brand, .bg-img--trees, .bg-img--trees-lg {
+  background-color: #384444;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  background-image: url("/docs/img/bg-trees.png"); }
+
+.bg-img--trees {
+  background-size: 85%; }
+
+.bg-img--trees-lg {
+  background-size: 85%; }
+
+.border-brand--yellow {
+  border-top: 5px solid #F5A623;
+  border-bottom: 5px solid #F5A623; }
+
+.font-brand--headings, .nav-link {
+  font-family: "montserratbold", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+body {
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
+  color: #384444; }
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem; }
+
+.content-wrapper {
+  max-width: 1440px;
+  margin: 0 auto; }
+
+.jumbotron-container {
+  height: 40vh; }
+
+.jumbo-heading {
+  margin: 0 auto; }
+  .jumbo-heading h1 {
+    font-size: 1.7rem; }
+
+.content-list h3 {
+  font-size: 1rem; }
+.content-list.content-list__contact .content-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 1rem 1rem 0; }
+.content-list.content-list__contact .content-item {
+  justify-content: left;
+  margin: 1rem; }
+  .content-list.content-list__contact .content-item a {
+    color: #384444; }
+
+.content-item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 2rem 0; }
+  .content-item h3 {
+    margin-right: 2rem; }
+
+.content-icon {
+  width: 7rem;
+  height: 7rem; }
+
+.contact-form button {
+  width: 50%; }
+
+.copyright-list {
+  color: #ccc;
+  font-size: 0.7rem; }
+
+.twp-logo {
+  width: 100%;
+  max-width: 5rem; }
+
+.twp-link {
+  font-size: 0.7rem; }
+
+.jumbotron {
+  background-image: url(/docs/img/hero-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-color: #384444;
+  position: relative;
+  border-radius: 0; }
+  .jumbotron .lead {
+    font-size: 1rem; }
+
+.navbar-light .navbar-toggler {
+  border: 0;
+  outline: none; }
+
+.nav-link {
+  font-size: 1rem; }
+
+@media only screen and (min-width: 500px) {
+  html {
+    font-size: 1.2rem; }
+
+  .jumbo-heading {
+    margin: 0 auto; } }
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 1.4rem; }
+
+  .navbar {
+    background-color: #fff;
+    box-shadow: 0px 2px 9px 1px rgba(56, 68, 68, 0.2); }
+
+  .nav-link {
+    font-size: 0.75rem; }
+
+  .jumbotron-container {
+    height: 60vh; }
+
+  .jumbo-heading {
+    max-width: 100%; }
+    .jumbo-heading h1 {
+      font-size: 1.75em; }
+
+  .content-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; }
+    .content-list.content-list__contact {
+      flex-direction: column;
+      justify-content: start; }
+      .content-list.content-list__contact .content-item {
+        width: 90%;
+        flex-flow: initial;
+        width: auto;
+        font-size: 0.75rem;
+        margin: .5rem 2rem 1rem 0; }
+        .content-list.content-list__contact .content-item:first-of-type {
+          margin-top: 0; }
+
+  .bg-img--trees {
+    background-size: 75%; }
+
+  .bg-img--trees-lg {
+    background-size: 90%; }
+
+  .content-item {
+    flex-flow: column-reverse;
+    width: 50%; }
+    .content-item h3 {
+      margin-right: 0;
+      margin-top: 2rem;
+      font-size: 0.7rem; }
+
+  .contact-options-group {
+    display: flex;
+    flex-flow: row-reverse; }
+    .contact-options-group .contact-form,
+    .contact-options-group .content-list {
+      width: 50%; }
+
+  .form-control {
+    font-size: 0.75rem; }
+
+  .twp-logo {
+    max-width: 3rem; }
+
+  .copyright-list {
+    font-size: 0.5rem; }
+
+  footer ul {
+    font-size: 0.75rem; } }
+@media only screen and (min-width: 992px) {
+  section h2 {
+    font-size: 2rem; }
+
+  .jumbotron-container {
+    max-width: 43rem;
+    margin: 0 auto;
+    height: 80vh; }
+
+  .jumbo-heading h1 {
+    font-size: 2.5rem; }
+
+  .bg-img--trees {
+    background-size: 65%; }
+
+  .bg-img--trees-lg {
+    background-size: 85%; }
+
+  .copyright-list {
+    font-size: 0.75rem; } }
+@media only screen and (min-width: 1200px) {
+  section h2 {
+    font-size: 2.5rem; }
+
+  .bg-img--trees {
+    background-size: 45%; }
+
+  .bg-img--trees-lg {
+    background-size: 85%; }
+
+  .content-icon {
+    width: 10rem;
+    height: 10rem; } }
+
+/*# sourceMappingURL=custom.css.map */
