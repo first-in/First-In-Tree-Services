@@ -1,12 +1,12 @@
 // Controls for responsive typography
-@include media-breakpoint-up(sm) {
+@media only screen and (min-width : 500px)  {
   
   html { font-size: 1.2rem; }
 
   .jumbo-heading { margin: 0 auto; }
 }
 
-@include media-breakpoint-up(md) {
+@media only screen and (min-width : 768px) {
 
   html { font-size: 1.4rem; }
 
@@ -42,7 +42,6 @@
         width: auto;
         font-size: 0.75rem;
         margin: .5rem 2rem 1rem 0;
-        justify-content: 
 
         &:first-of-type { margin-top: 0; }
       }
@@ -89,7 +88,7 @@
 
 }
 
-@include media-breakpoint-up(lg) {
+@media only screen and (min-width : 992px) {
 
   section h2 { font-size: 2rem; }
 
@@ -111,7 +110,7 @@
   .copyright-list { font-size: 0.75rem; }
 }
 
-@include media-breakpoint-up(xl) {
+@media only screen and (min-width : 1200px) {
 
   section h2 { font-size: 2.5rem; }
 
