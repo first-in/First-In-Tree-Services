@@ -13,14 +13,14 @@
 <body>
 
 		<!-- navigation incl. mobile -->
-		<header>
+		<header class="container">
 			<nav class="navbar navbar-expand-md navbar-light">
-			  <a class="navbar-brand" href="www.firstintreeservices.com"><img src="img/fits-logo.svg" alt="company logo" > F.I.T.S.</a>
+			  <a class="font-brand--headings color-brand--dark d-flex align-items-center mb-0" href="www.firstintreeservices.com"><img src="img/fits-logo.svg" alt="company logo" ><span class="ml-2 h3 color-brand--primary mb-0">F.I.T.S.</span></a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
-			  <div class="collapse navbar-collapse" id="navbarNav">
-			    <ul class="navbar-nav">
+			  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			    <ul class="navbar-nav flex-row justify-content-between">
 			      <li class="nav-item">
 			        <a class="nav-link" href="#Services">Services</a>
 			      </li>
@@ -37,14 +37,20 @@
 
 			<!-- hero -->
 		<section>
-			<div class="jumbotron d-flex flex-column align-items-center justify-content-center mb-0 p-4">
+			<div class="jumbotron mb-0 p-4">
 			    <!-- <span class="gradient-overlay"></span> -->
-			    <div class="jumbo-heading">
-				  	<h1 class="text-light">FIRST IN TREE SERVICES</h1>
-				    <p class="lead text-light mb-0">Tree care professionals serving Greater Richmond and the surrounding areas</p>
-				  </div>
+			    <div class="jumbotron-container d-flex flex-column flex-md-row align-items-center justify-content-center">
+				    <div class="d-none d-md-inline-block mr-3 mr-lg-4">
+				    	<img src="img/fits-badge.svg" alt="company badge and motto: integrity, commitment, excellence" >
+				    </div>
 
-				  <div class="w-100 text-center mt-4">
+				    <div class="jumbo-heading container">
+					  	<h1 class="text-light">FIRST IN TREE SERVICES</h1>
+					    <p class="lead text-light mb-0">Tree care professionals serving Greater Richmond and the surrounding areas</p>
+					  </div>
+					</div>
+
+				  <div class="w-100 text-center d-md-none">
 				  	<img src="img/trees-icon.svg" alt="tree icons">
 				  </div>
 			  </div>
@@ -53,13 +59,15 @@
 
 		<section>
 			<div class="bg-brand--dark border-brand--yellow p-4">
-				<p class="color-brand--tan mb-0">Whether it’s storm damage or seasonal pruning, First In Tree Services has been committed to leaving customers satisfied since 2014.</p>
+				<div class="container">
+					<p class="color-brand--tan mb-0">Whether it’s storm damage or seasonal pruning, First In Tree Services has been committed to leaving customers satisfied since 2014.</p>
+				</div>
 			</div>
 		</section>
 
 		<!-- services -->
 		<section id="Services">
-			<div class="p-4">
+			<div class="container py-4">
 				<h2 class="text-center">SERVICES</h2>
 				<p class="d-md-none">Fully licensed and insured, we have you covered with all your residential or commercial needs for tree services</p>
 				<p class="d-none d-md-block">Fully licensed and insured, we have you covered with all your residential or commercial needs for tree services including trimming and pruning, storm damage clean up, live and dead tree removal, canopy raising, and standard tree maintenance and care.</p>
@@ -73,7 +81,7 @@
 						</div>
 
 						<div class="content-item">
-							<h3>TRIMMING &amp; PRUNING</h3>
+							<h3>TRIM &amp; PRUNING</h3>
 							<span class="content-icon"></span>
 						</div>
 
@@ -99,26 +107,24 @@
 		<!-- email sign up -->
 		<section>
 			<div class="bg-brand--dark p-4">
-				<p class="color-brand--tan">Sign up for our email list and we’ll send you tips, tree care advice, and seasonal recommendations!</p>
-				<form>
-					<div class="container">
-						<div class="row">
-						  <div class="col-9 p-0">
-						    <label for="inputPassword2" class="sr-only">Email Address</label>
-						    <input type="email" class="form-control" id="emailSignUp" placeholder="Email Address">
-						  </div>
-						  <div class="col-3">
-						  	<button type="submit" class="btn bg-brand--yellow">Submit</button>
-						  </div>
-						</div>
-					</div>
-				</form>
+				<div class="container">
+					<p class="color-brand--tan">Sign up for our email list and we’ll send you tips, tree care advice, and seasonal recommendations!</p>
+					<form class="d-flex">
+					  <div class="w-75">
+					    <label for="inputPassword2" class="sr-only">Email Address</label>
+					    <input type="email" class="form-control" id="emailSignUp" placeholder="Email Address">
+					  </div>
+					  <div class="w-25 ml-3">
+					  	<button type="submit" class="btn bg-brand--yellow w-100">Submit</button>
+					  </div>
+					</form>
+				</div>
 			</div>
 		</section>
 
 		<!-- about -->
 		<section id="About" class="bg-brand--primary">
-			<div class="p-4">
+			<div class="container py-4">
 				<h2 class="text-center text-light">HOW WE STARTED</h2>
 
 				<p class="text-light">Nick Waters started working in the tree industry for Asplundh Tree Expert Co. in the fall of 1999 where over the next few years he worked his way up to a Class A Foreman.</p>
@@ -144,7 +150,7 @@
 
 		<!-- contact form -->
 		<section id="Contact">
-			<div class="p-4">
+			<div class="container py-4">
 				<h2 class="text-center">CONTACT US</h2>
 				<p>All of our prices depend on your unique situation. Call, email, or fill out this form to schedule an appointment for an estimate.</p>
 
@@ -171,7 +177,7 @@
 						</div>
 
 						<div class="text-right">
-							<button type="submit" class="btn btn-primary">Submit</button>
+							<button type="submit" class="btn bg-brand--primary text-light">Submit</button>
 						</div>
 					</form>
 
@@ -210,11 +216,103 @@
 			</div>
 		</section>
 
-		<footer>
-			
+		<footer class="bg-brand--dark">
+			<div class="container py-2">
+				<header>
+					<!-- <a class="navbar-brand" href="www.firstintreeservices.com"><img src="img/fits-logo.svg" alt="company logo" > F.I.T.S.</a> -->
+					<a class="font-brand--headings color-brand--tan d-flex align-items-center mb-0" href="www.firstintreeservices.com"><img src="img/fits-logo.svg" alt="company logo" ><span class="ml-2 h3 color-brand--tan mb-0">F.I.T.S.</span></a>
+				</header>
+			</div>
+			<nav class="border-brand--yellow">
+				<div class="container py-4">
+					<ul class="list-unstyled d-flex flex-row justify-content-between mb-0 text-light">
+						<li><a class="font-brand--headings text-light" href="#Services">SERVICES</a></li>
+						<li><a class="font-brand--headings text-light" href="#About">ABOUT</a></li>
+						<li><a class="font-brand--headings text-light" href="#Contact">CONTACT</a></li>
+					</ul>
+				</div>
+			</nav>
+
+				<section class="container pt-4">
+					<p class="color-brand--tan">Sign up for our email list and we’ll send you tips, tree care advice, and seasonal recommendations!</p>
+					<form class="d-flex">
+					  <div class="w-75">
+					    <label for="inputPassword2" class="sr-only">Email Address</label>
+					    <input type="email" class="form-control" id="emailSignUp" placeholder="Email Address">
+					  </div>
+					  <div class="w-25 ml-3">
+					  	<button type="submit" class="btn bg-brand--yellow w-100">Submit</button>
+					  </div>
+					</form>
+				</section>
+
+				<div class="content-list content-list__contact d-none">
+					<div class="content-item">
+						<span class="content-icon"></span>
+						<a href="mailto:nick@firstintreeservices.com">nick@firstintreeservices.com</a>
+					</div>
+
+					<div class="content-item">
+						<span class="content-icon"></span>
+						<a href="tel:+18044671550">804-467-1550</a>
+					</div>
+
+					<div class="content-item">
+						<span class="content-icon"></span>
+						<span>@firstintreeservices</span>
+					</div>
+
+					<div class="content-item">
+						<span class="content-icon"></span>
+						<span>FirstInTreeServices</span>
+					</div>
+
+					<div class="content-item">
+						<span class="content-icon"></span>
+						<span>First In Tree Services LLC</span>
+					</div>
+				</div>
+				
+				<div class="d-flex flex-row justify-content-between p-4">
+						<div class="copyright-list list-unstyled mb-0 d-flex flex-column flex-md-row justify-content-end align-items-md-end">
+							<p class="mb-0 mr-md-3">FIRST IN TREE SERVICES LLC</p>
+							<p class="mb-0">COPYRIGHT 2018</p>
+						</div>
+
+					<div class="d-flex flex-row align-items-end">
+						<p class="twp-link d-none d-md-inline-block mr-4 mb-0"><a class="text-light font-brand--headings" href="www.thewholepye.com">The Whole Pye Design Co.</a></p>
+						<img class="twp-logo" src="img/twp-badge-logo.png" alt="The Whole Pye Design Co.">
+					</div>
+				</div>
+			</div>
 		</footer>
 
+		<div class="modal fade" id="underConstruction" tabindex="-1" role="dialog" aria-labelledby="underConstructionLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="underConstructionLabel">Site Under Construction</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        Sorry for the mess - our website is still under construction! Please see the contact information to reach out. Thanks!
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#underConstruction">
+  Launch demo modal
+</button>
+
   <script src="bundle.js"></script>
+  
+
 
 </body>
 </html>

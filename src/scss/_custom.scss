@@ -21,20 +21,23 @@ IMPORT SASS PARTIALS INDIVIDUALLY (Note that Bootstrap’s functions, variables 
 @import "font";
 
 // Brand schemes
-.color-brand--tan { color: $brand-tan; }
-.bg-brand--dark { background-color: $brand-dark; }
-.bg-brand--primary { background-color: $brand-primary; }
-.bg-brand--yellow { background-color: $brand-yellow; }
+.color-brand--tan { color: $brand-tan !important; }
+.color-brand--dark { color: $brand-dark !important; }
+.color-brand--primary { color: $brand-primary !important; }
+
+.bg-brand--dark { background-color: $brand-dark !important; }
+.bg-brand--primary { background-color: $brand-primary !important; } 
+.bg-brand--yellow { background-color: $brand-yellow !important; }
 .border-brand--yellow { 
 	border-top: 5px solid $brand-yellow; 
 	border-bottom: 5px solid $brand-yellow; 
 }
+.font-brand--headings { font-family: $headings-font-family; }
 
 // General raw element styles
 section {
 	h2 { 
 		font-size: 1.5rem;
-		margin-top: 1rem;
 		margin-bottom: 2rem; 
 	}
 }
@@ -54,15 +57,15 @@ section {
 // 	opacity: .75;
 // }
 
+.jumbotron-container { height: 40vh; }
+
 .jumbo-heading { 
-	max-width: 22rem;
 	margin: 0 auto;	
 
-	h1 { font-size: 1.5rem; }
+	h1 { font-size: 1.7rem; }
  }
 
 .content-list {
-	width: 100%;
 
 	h3 { font-size: 1rem; }
 
@@ -96,4 +99,20 @@ section {
 	width: 7rem;
 	height: 7rem;
 	background-color: #ccc;
+}
+
+.contact-form button { width: 50%; }
+
+.copyright-list {
+	color: #ccc;
+	font-size: 0.7rem;
+}
+
+.twp-logo {
+	width: 100%;
+	max-width: 5rem;
+}
+
+.twp-link {
+	font-size: 0.7rem;
 }
