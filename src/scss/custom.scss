@@ -17,7 +17,7 @@
   background-position: bottom right;
 	background-repeat: no-repeat;
   background-blend-mode: soft-light;
-	background-image: url('/docs/img/bg-trees.png');
+	background-image: url('img/bg-trees.png');
 }
 .bg-img--trees { 
   background-size: 85%;
@@ -127,7 +127,7 @@ section {
 
 // Bootstrap Overrides
 .jumbotron {
-	background-image: url(/docs/img/hero-bg.jpg);
+	background-image: url('img/hero-bg.jpg');
 	background-size: cover;    
 	background-position: center center;
 	background-color: $brand-dark;
