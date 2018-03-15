@@ -55,16 +55,6 @@ section {
 	margin: 0 auto;
 }
 
-// .gradient-overlay {
-// 	position: absolute;
-// 	top: 0;
-// 	bottom: 0;
-// 	left: 0;
-// 	right: 0;
-// 	background-color: #384444;
-// 	opacity: .75;
-// }
-
 .jumbotron-container { height: 40vh; }
 
 .jumbo-heading { 
@@ -83,12 +73,13 @@ section {
 		.content-icon {
 	    height: 1.5rem;
 	    width: 1.5rem;
-	    margin: 1rem 1rem 0;
+	    margin: 0 1rem 0;
 		}
 
 		.content-item { 
 			justify-content: left;
 			margin: 1rem; 
+			align-items: center;
 
 			a { color: $brand-dark; }
 		}
