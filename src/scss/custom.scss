@@ -2,7 +2,7 @@
 @import "vars";
 @import "font";
 
-// Brand schemes
+// Brand classes
 .color-brand--tan { color: $brand-tan !important; }
 .color-brand--dark { color: $brand-dark !important; }
 .color-brand--yellow { color: $brand-yellow !important; }
@@ -35,7 +35,7 @@
 }
 .font-brand--headings { font-family: $headings-font-family; }
 
-// General raw element styles
+// General element styles
 body {
 	position: relative;
 	height: 100%;

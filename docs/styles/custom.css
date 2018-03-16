@@ -163,6 +163,73 @@ section h2 {
 
   .jumbo-heading {
     margin: 0 auto; } }
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 1.4rem; }
+
+  .navbar {
+    background-color: #fff;
+    box-shadow: 0px 2px 9px 1px rgba(56, 68, 68, 0.2); }
+
+  .nav-link {
+    font-size: 0.75rem; }
+
+  .jumbotron-container {
+    height: 60vh; }
+
+  .jumbo-heading {
+    max-width: 100%; }
+    .jumbo-heading h1 {
+      font-size: 1.75em; }
+
+  .content-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; }
+    .content-list.content-list__contact {
+      flex-direction: column;
+      justify-content: start; }
+      .content-list.content-list__contact .content-item {
+        width: 90%;
+        flex-flow: initial;
+        width: auto;
+        font-size: 0.75rem;
+        margin: .5rem 2rem 1rem 0; }
+        .content-list.content-list__contact .content-item:first-of-type {
+          margin-top: 0; }
+
+  .bg-img--trees {
+    background-size: 75%; }
+
+  .bg-img--trees-lg {
+    background-size: 90%; }
+
+  .content-item {
+    flex-flow: column-reverse;
+    width: 50%; }
+    .content-item h3 {
+      margin-right: 0;
+      margin-top: 2rem;
+      font-size: 0.7rem; }
+
+  .contact-options-group {
+    display: flex;
+    flex-flow: row-reverse; }
+    .contact-options-group .contact-form,
+    .contact-options-group .content-list {
+      width: 50%; }
+
+  .form-control {
+    font-size: 0.75rem; }
+
+  .twp-logo {
+    max-width: 3rem; }
+
+  .copyright-list {
+    font-size: 0.5rem; }
+
+  footer ul {
+    font-size: 0.75rem; } }
 @media only screen and (min-width: 992px) {
   section h2 {
     font-size: 2rem; }
