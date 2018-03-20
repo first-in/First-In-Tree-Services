@@ -43,6 +43,13 @@ body {
 	font-family: $font-family-base;
 }
 
+a { 
+	color: $brand-dark;
+
+	&:hover { color: $brand-primary; }
+
+ }
+
 section {
 	h2 { 
 		font-size: 1.5rem;
@@ -79,8 +86,6 @@ section {
 	align-items: center;
 	margin: 1rem;
 	position: relative;
-
-	a { color: $brand-dark; }
 }
 
 .accordion-icon {

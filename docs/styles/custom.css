@@ -86,6 +86,11 @@ body {
   color: #384444;
   font-family: "montserratregular", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+a {
+  color: #384444; }
+  a:hover {
+    color: #646B5B; }
+
 section h2 {
   font-size: 1.5rem;
   margin-bottom: 2rem; }
@@ -117,8 +122,6 @@ section h3 {
   align-items: center;
   margin: 1rem;
   position: relative; }
-  .content-item a {
-    color: #384444; }
 
 .accordion-icon {
   width: 7rem;
