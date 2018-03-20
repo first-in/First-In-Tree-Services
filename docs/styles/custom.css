@@ -101,33 +101,40 @@ section h2 {
   .jumbo-heading h1 {
     font-size: 1.7rem; }
 
-.content-list h3 {
-  font-size: 1rem; }
-.content-list.content-list__contact .content-icon {
-  height: 1.5rem;
-  width: 1.5rem;
-  margin: 0 1rem 0; }
-.content-list.content-list__contact .content-item {
-  justify-content: left;
-  margin: 1rem;
-  align-items: center; }
-  .content-list.content-list__contact .content-item a {
-    color: #384444; }
+.content-list {
+  width: 100%; }
+  .content-list h3 {
+    font-size: 1rem; }
 
 .content-item {
   display: flex;
-  justify-content: flex-end;
+  justify-content: left;
   align-items: center;
-  margin: 2rem 0; }
-  .content-item h3 {
-    margin-right: 2rem; }
+  margin: 1rem;
+  position: relative; }
+  .content-item a {
+    color: #384444; }
 
-.content-icon {
+.accordion-icon {
   width: 7rem;
   height: 7rem; }
 
+.content-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0 1rem 0; }
+
 .contact-form button {
   width: 50%; }
+
+.services-btn {
+  background: transparent;
+  border: 0;
+  outline: none; }
+  .services-btn:focus {
+    outline: none; }
+  .services-btn h3 {
+    font-size: 1rem; }
 
 .copyright-list {
   color: #ccc;
@@ -150,12 +157,53 @@ section h2 {
   .jumbotron .lead {
     font-size: 1rem; }
 
+.navbar {
+  box-shadow: 0px 2px 9px 1px rgba(56, 68, 68, 0.2); }
+
 .navbar-light .navbar-toggler {
   border: 0;
   outline: none; }
 
 .nav-link {
   font-size: 1rem; }
+
+.card {
+  border: 0; }
+
+.card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 0; }
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column-reverse;
+  justify-content: center;
+  align-items: center;
+  color: #646B5B; }
+  .nav-link.active {
+    color: #F5A623 !important;
+    border: 0; }
+  .nav-link:hover {
+    border: 0;
+    color: #646B5B;
+    transform: scale(1.1);
+    transition: all ease-in-out .25s; }
+  .nav-link h3 {
+    font-size: 0.75rem;
+    margin-top: 1rem;
+    text-align: center; }
+
+.nav-tabs {
+  border: 0;
+  flex-wrap: nowrap;
+  justify-content: space-between; }
+
+.tab-pane {
+  font-size: 0.75rem; }
 
 @media only screen and (min-width: 500px) {
   html {
@@ -168,8 +216,7 @@ section h2 {
     font-size: 1.4rem; }
 
   .navbar {
-    background-color: #fff;
-    box-shadow: 0px 2px 9px 1px rgba(56, 68, 68, 0.2); }
+    background-color: #fff; }
 
   .nav-link {
     font-size: 0.75rem; }
@@ -203,6 +250,17 @@ section h2 {
 
   .bg-img--trees-lg {
     background-size: 90%; }
+
+  .card-header {
+    flex-direction: column;
+    flex-flow: column-reverse; }
+
+  .services-accordion {
+    display: flex; }
+
+  .accordion-icon {
+    width: 5rem;
+    height: 5rem; }
 
   .content-item {
     flex-flow: column-reverse;
