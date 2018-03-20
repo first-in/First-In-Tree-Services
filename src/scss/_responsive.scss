@@ -55,6 +55,17 @@
     background-size: 90%; 
   }
 
+  .card-header {
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+
+  .services-accordion { display: flex; }
+  
+  .accordion-icon {
+    width: 5rem;
+    height: 5rem;
+  }
 
   .content-item {
  	  flex-flow: column-reverse;
