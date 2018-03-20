@@ -101,26 +101,67 @@ section h2 {
   .jumbo-heading h1 {
     font-size: 1.7rem; }
 
-.content-list h3 {
-  font-size: 1rem; }
-.content-list.content-list__contact .content-icon {
-  height: 1.5rem;
-  width: 1.5rem;
-  margin: 0 1rem 0; }
-.content-list.content-list__contact .content-item {
-  justify-content: left;
-  margin: 1rem;
-  align-items: center; }
-  .content-list.content-list__contact .content-item a {
-    color: #384444; }
+.content-list {
+  width: 100%; }
+  .content-list h3 {
+    font-size: 1rem; }
+  .content-list.content-list__contact .content-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0 1rem 0; }
+  .content-list.content-list__contact .content-item {
+    justify-content: left;
+    margin: 1rem;
+    align-items: center; }
+    .content-list.content-list__contact .content-item a {
+      color: #384444; }
 
 .content-item {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  margin: 2rem 0; }
+  margin: 2rem 0;
+  position: relative; }
   .content-item h3 {
     margin-right: 2rem; }
+
+.content-trigger {
+  display: flex;
+  align-items: center;
+  color: #384444; }
+  .content-trigger:hover {
+    text-decoration: none;
+    color: #384444; }
+
+.content-card {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transform: translate(-200%);
+  opacity: 0;
+  background: #fff;
+  font-size: 0.8rem;
+  box-shadow: 0px 2px 9px 1px rgba(56, 68, 68, 0.2);
+  z-index: 100;
+  transition: all ease-in-out .33s; }
+  .content-card.current {
+    transform: translate(0) !important;
+    opacity: 1 !important; }
+
+.content-close {
+  display: flex;
+  justify-content: flex-end; }
+  .content-close > a {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ECC587;
+    background-color: #646B5B;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .content-icon {
   width: 7rem;
@@ -150,6 +191,9 @@ section h2 {
   .jumbotron .lead {
     font-size: 1rem; }
 
+.navbar {
+  box-shadow: 0px 2px 9px 1px rgba(56, 68, 68, 0.2); }
+
 .navbar-light .navbar-toggler {
   border: 0;
   outline: none; }
@@ -168,8 +212,7 @@ section h2 {
     font-size: 1.4rem; }
 
   .navbar {
-    background-color: #fff;
-    box-shadow: 0px 2px 9px 1px rgba(56, 68, 68, 0.2); }
+    background-color: #fff; }
 
   .nav-link {
     font-size: 0.75rem; }
