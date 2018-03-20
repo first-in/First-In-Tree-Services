@@ -28,7 +28,6 @@
 	@extend .bg-img--brand; 
 }
 
-
 .border-brand--yellow { 
 	border-top: 5px solid $brand-yellow; 
 	border-bottom: 5px solid $brand-yellow; 
@@ -41,6 +40,7 @@ body {
 	height: 100%;
 	overflow-y: scroll;
 	color: $brand-dark;
+	font-family: $font-family-base;
 }
 
 section {
@@ -48,6 +48,10 @@ section {
 		font-size: 1.5rem;
 		margin-bottom: 2rem; 
 	}
+
+	h1,
+	h2,
+	h3 { font-family: $headings-font-family; }
 }
 
 .content-wrapper {

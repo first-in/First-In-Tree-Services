@@ -83,11 +83,16 @@ body {
   position: relative;
   height: 100%;
   overflow-y: scroll;
-  color: #384444; }
+  color: #384444;
+  font-family: "montserratregular", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 section h2 {
   font-size: 1.5rem;
   margin-bottom: 2rem; }
+section h1,
+section h2,
+section h3 {
+  font-family: "montserratbold", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .content-wrapper {
   max-width: 1440px;
