@@ -144,6 +144,12 @@ section h3 {
   .services-btn h3 {
     font-size: 1rem; }
 
+.footer-nav {
+  width: 100%; }
+
+.footer-sign-up {
+  max-width: 35rem; }
+
 .copyright-list {
   color: #ccc;
   font-size: 0.7rem; }
@@ -240,10 +246,12 @@ section h3 {
   .content-list {
     display: flex;
     justify-content: space-around;
-    width: 100%; }
+    width: 100%;
+    }
     .content-list.content-list__contact {
       flex-direction: column;
-      justify-content: start; }
+      justify-content: space-between;
+      }
       .content-list.content-list__contact .content-item {
         width: 90%;
         flex-flow: initial;
@@ -295,7 +303,10 @@ section h3 {
     font-size: 0.5rem; }
 
   footer ul {
-    font-size: 0.75rem; } }
+    font-size: 0.75rem; }
+
+  .footer-nav {
+    width: 25%; } }
 @media only screen and (min-width: 992px) {
   section h2 {
     font-size: 2rem; }

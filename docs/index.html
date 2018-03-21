@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="description" content="residential and commercial tree service company">
   <meta name="author" content="The Whole Pye Design Co">
-  <meta name="keywords" content="tree care, storm damage, tree removal">
+  <meta name="keywords" content="tree care, storm damage, tree removal, tree service">
 
 	<!-- Bootstrap v4 -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -313,18 +313,37 @@
 					</a>
 				</header>
 			</div>
-			<nav class="border-brand--yellow">
-				<div class="container py-4">
-					<ul class="list-unstyled d-flex flex-row justify-content-around mb-0 text-light">
-						<li><a class="font-brand--headings text-light" href="#Services">SERVICES</a></li>
-						<li><a class="font-brand--headings text-light" href="#About">ABOUT</a></li>
-						<li><a class="font-brand--headings text-light" href="#Contact">CONTACT</a></li>
-					</ul>
-				</div>
-			</nav>
 
-			<section class="container py-4">
-				<div class="container py-4 d-lg-flex align-items-center">
+			<div class="footer-nav-wrapper border-brand--yellow">
+				<nav class="container d-md-flex align-items-center">
+					<div class="footer-nav container py-4 px-0">
+						<ul class="list-unstyled d-flex flex-row flex-md-column justify-content-between mb-0 text-light">
+							<li><a class="font-brand--headings text-light" href="#Services">SERVICES</a></li>
+							<li class="mt-md-2"><a class="font-brand--headings text-light" href="#About">ABOUT</a></li>
+							<li class="mt-md-2"><a class="font-brand--headings text-light" href="#Contact">CONTACT</a></li>
+						</ul>
+					</div>
+
+					<!-- Desktop footer form -->
+					<div class="footer-sign-up container d-md-flex flex-column align-items-center d-none d-md-block">
+						<p class="color-brand--tan w-100 pt-4">Sign up for our emails and we’ll send you tips, advice, and seasonal recommendations!</p>
+						<form class="d-flex w-100 mb-4">
+						  <div class="w-75">
+						    <label for="inputPassword2" class="sr-only">Email Address</label>
+						    <input type="email" class="form-control" id="emailSignUp" placeholder="Email Address">
+						  </div>
+						  <div class="w-25 ml-3">
+						  	<!-- <button type="submit" class="btn bg-brand--yellow w-100 p-1">Submit</button> -->
+					  	<button type="button" class="btn bg-brand--yellow w-100 p-1" data-toggle="modal" data-target="#contstructionModal">Send</button>
+						  </div>
+						</form>
+					</div>
+				</nav>
+			</div>
+
+			<!-- Mobile footer form -->
+			<section class="container py-4 d-md-none">
+				<div class="container d-lg-flex align-items-center p-0">
 					<p class="color-brand--tan w-100 pt-4 pt-lg-0 mb-lg-0">Sign up for our emails and we’ll send you tips, advice, and seasonal recommendations!</p>
 					<form class="d-flex w-100 ml-lg-4 mb-4 mb-lg-0">
 					  <div class="w-75">
@@ -339,32 +358,31 @@
 				</div>
 			</section>
 
-			<!-- <div class="content-list content-list__contact d-none">
-				<div class="content-item">
-					<span class="content-icon"></span>
-					<a href="mailto:nick@firstintreeservices.com">nick@firstintreeservices.com</a>
-				</div>
+			<section class="container py-4">
+				<div class="content-list content-list__contact my-4 py-4 p-md-0 m-md-0 d-none d-md-flex flex-row justify-content-between align-items-center">
 
-				<div class="content-item">
-					<img class="content-icon"></span>
-					<a href="tel:+18044671550">804-467-1550</a>
-				</div>
+					<a href="https://www.instagram.com/firstintreeservices/">
+						<div class="content-item d-flex flex-column m-0">
+							<img src="img/insta.svg" class="content-icon mb-2" >
+							<span class="color-brand--yellow">@firstintreeservices</span>
+						</div>
+					</a>
 
-				<div class="content-item">
-					<span class="content-icon"></span>
-					<span>@firstintreeservices</span>
-				</div>
+					<a href="https://www.youtube.com/channel/UCPAONikhJIxQi2ZFjyOicuw">
+						<div class="content-item d-flex flex-column m-0">
+							<img src="img/youtube.svg" class="content-icon mb-2" >
+							<span class="color-brand--yellow">First In Tree Services LLC</span>
+						</div>
+					</a>
 
-				<div class="content-item">
-					<span class="content-icon"></span>
-					<span>FirstInTreeServices</span>
+					<a href="https://www.facebook.com/FirstInTreeServices/">
+						<div class="content-item d-flex flex-column m-0">
+							<img src="img/fb.svg" class="content-icon mb-2" >
+							<span class="color-brand--yellow">FirstInTreeServices</span>
+						</div>
+					</a>
 				</div>
-
-				<div class="content-item">
-					<span class="content-icon"></span>
-					<span>First In Tree Services LLC</span>
-				</div>
-			</div> -->
+			</section>
 
 			<!-- Under Construction Modal -->
 			<div class="modal fade" id="contstructionModal" tabindex="-1" role="dialog" aria-labelledby="contstructionModalLabel" aria-hidden="true">
